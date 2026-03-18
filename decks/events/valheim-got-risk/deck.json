@@ -17,7 +17,8 @@
     ],
     "notes": [
       "Inspirado en Valheim y Game of Thrones; efectos pensados para una partida tipo Risk.",
-      "Los efectos son intencionalmente genéricos (unidades/oro/personajes/regiones) para que una web app o reglas caseras los interpreten."
+      "Los efectos son intencionalmente genéricos (unidades/oro/personajes/regiones) para que una web app o reglas caseras los interpreten.",
+      "Unidades especiales (opcionales): Caballería (C), Asedio (A), Fortificación (F). Si no usas unidades especiales, cada unidad especial equivale a +2 unidades normales. Si las usas: C puede fortificar moviéndose hasta 2 regiones propias (en vez de 1); A puede descartarse antes de un ataque para eliminar 2 unidades defensoras del territorio objetivo; F se coloca en un territorio y cuenta como +2 unidades extra al defender (no puede moverse)."
     ]
   },
   "cards": [
@@ -54,7 +55,7 @@
     {
       "id": "evt-006",
       "title": "La Boda Roja",
-      "flavor": "La música cambia, las puertas se cierran y las sonrisas se vuelven cuchillos. La confianza se paga cara… y a veces se paga con sangre en el suelo del banquete.",
+      "flavor": "En Los Gemelos, el banquete se convierte en trampa: las puertas se cierran, la música cambia y los brindis se vuelven señal. La confianza se cobra en sangre sobre la madera.",
       "ruleText": "Stark: Stark pierde a Robb Stark y Catelyn Stark. Además, elimina 4 unidades de su mapa. Retira esta carta de la partida."
     },
     {
@@ -120,8 +121,8 @@
     {
       "id": "evt-017",
       "title": "Tormenta en el Mar Angosto",
-      "flavor": "Velas rotas, mares negros y sal que corta la piel. Los capitanes se niegan a salir y tus rutas se vuelven un riesgo.",
-      "ruleText": "Baratheon: Este turno no puedes realizar ataques por mar (si tu variante no usa mar, entonces pierdes 2 unidades)."
+      "flavor": "Tras el naufragio de la flota de Stannis, el Mar Angosto se traga hombres y madera. Sin velas no hay refuerzos; sin refuerzos, los juramentos pesan menos.",
+      "ruleText": "Baratheon: Este turno no puedes realizar ataques por mar. Además, si tienes alguna unidad de Asedio, elimina 1 unidad de Asedio (o, si no usas especiales, elimina 2 unidades)."
     },
     {
       "id": "evt-018",
@@ -132,8 +133,8 @@
     {
       "id": "evt-019",
       "title": "Caballería de las Rosas",
-      "flavor": "El campo florece… y también las lanzas. Los jinetes llegan con capas limpias y ojos fríos: vienen a ganar, no a morir.",
-      "ruleText": "Tyrell: Coloca +4 unidades en una región que controles."
+      "flavor": "Renly reúne estandartes en Altojardín y la caballería aparece como un mar de puntas. Entre perfumes y acero, el Dominio recuerda que también sabe aplastar.",
+      "ruleText": "Tyrell: Coloca +2 unidades de Caballería en una región que controles (o +4 unidades normales si no usas especiales)."
     },
     {
       "id": "evt-020",
@@ -204,8 +205,8 @@
     {
       "id": "evt-031",
       "title": "El Banco de Hierro llama a tu puerta",
-      "flavor": "No gritan, no amenazan, no suplican. Simplemente recuerdan lo obvio: las deudas no se olvidan y las coronas se caen.",
-      "ruleText": "Elige 1: (A) paga 800 de oro; (B) si no pagas, elimina 4 unidades."
+      "flavor": "Un cuervo con sello de Braavos llega con letras frías: no hay excusas, solo números. En Poniente, las coronas cambian… pero las deudas permanecen.",
+      "ruleText": "Elige 1: (A) paga 800 de oro y coloca 1 unidad de Asedio en una región que controles (o +2 unidades si no usas especiales); (B) si no pagas, elimina 4 unidades."
     },
     {
       "id": "evt-032",
@@ -222,8 +223,8 @@
     {
       "id": "evt-034",
       "title": "Llamada del Muro",
-      "flavor": "El cuerno suena una vez. Dos veces. Tres veces. Quienes miran al Norte entienden el mensaje: o envías hombres, o el frío los enviará por ti.",
-      "ruleText": "Cada jugador elige 1: (A) coloca +2 unidades en el Norte (si controla Norte); (B) elimina 2 unidades."
+      "flavor": "Tres toques del cuerno y los veteranos palidecen: no es una patrulla, es una amenaza. El Muro no se sostiene con honor, sino con manos y piedra.",
+      "ruleText": "Cada jugador elige 1: (A) si controla el Norte, coloca +2 unidades en el Norte y además coloca 1 Fortificación en una región del Norte que controle (o +2 unidades si no usas especiales); (B) elimina 2 unidades."
     },
     {
       "id": "evt-035",
@@ -234,8 +235,8 @@
     {
       "id": "evt-036",
       "title": "Los caballeros del Valle responden",
-      "flavor": "Desde las montañas llega un rumor que se vuelve galope. Acero limpio, disciplina y una promesa: esta vez sí llegan a tiempo.",
-      "ruleText": "Stark: Coloca +5 unidades en una región que controles y gana 200 de oro."
+      "flavor": "En el último momento, los estandartes del Valle irrumpen en la llanura: cascos, lanzas y disciplina. Donde todo estaba perdido, un galope cambia la batalla.",
+      "ruleText": "Stark: Coloca +2 unidades de Caballería y +1 unidad normal en una región que controles (o +5 unidades normales si no usas especiales). Además, gana 200 de oro."
     },
     {
       "id": "evt-037",
@@ -252,20 +253,20 @@
     {
       "id": "evt-039",
       "title": "El Fuego Valyrio aparece en los sótanos",
-      "flavor": "Un alquimista sonríe demasiado. El frasco brilla verde incluso en la oscuridad, y de pronto todos negocian con más respeto.",
-      "ruleText": "Lannister: En tu próximo turno obtienes +4 refuerzos, pero pagas 300 de oro ahora."
+      "flavor": "En las bóvedas de la capital, la Alianza Pirotécnica abre frascos verdes como promesas. En Aguasnegras, una chispa basta para cambiar una guerra.",
+      "ruleText": "Lannister: Coloca 1 Fortificación en una región que controles (o +2 unidades si no usas especiales). Además, en tu próximo turno obtienes +2 refuerzos, pero pagas 300 de oro ahora."
     },
     {
       "id": "evt-040",
       "title": "Los Dothraki cruzan como tormenta",
-      "flavor": "Se escucha el galope antes de ver el polvo. No asedian: atraviesan, rodean y caen donde duele.",
-      "ruleText": "Targaryen: Obtienes +5 refuerzos este turno y 1 fortificación extra."
+      "flavor": "En el Campo de Fuego, el galope llega como trueno: arcos, gritos y una línea que se rompe. No toman castillos; toman el espacio entre tus latidos.",
+      "ruleText": "Targaryen: Coloca +2 unidades de Caballería (o +4 unidades normales si no usas especiales) y además obtienes +1 fortificación extra este turno."
     },
     {
       "id": "evt-041",
       "title": "El dragón muda de piel",
-      "flavor": "Una bestia crece y con ella crece el miedo. Los mercaderes pagan para no arder y los soldados se enderezan al escuchar el rugido.",
-      "ruleText": "Targaryen: Ganas 400 de oro y colocas +2 unidades en una región que controles."
+      "flavor": "En el foso de combate de Meereen, el rugido no es discurso: es mandato. La bestia crece y con ella crece el precio del miedo.",
+      "ruleText": "Targaryen: Ganas 400 de oro y colocas +1 unidad de Asedio en una región que controles (o +2 unidades normales si no usas especiales)."
     },
     {
       "id": "evt-042",
@@ -288,8 +289,8 @@
     {
       "id": "evt-045",
       "title": "Jardines fortificados",
-      "flavor": "El Dominio no solo da comida: también da muros, herramientas y manos. Levantas defensas rápidas como si la tierra misma ayudara.",
-      "ruleText": "Tyrell: Coloca +3 unidades en una región que controles y puedes hacer hasta 2 fortificaciones extra este turno."
+      "flavor": "Con el Dominio intacto, las rutas del grano se vuelven murallas y los setos se vuelven trincheras. Altojardín enseña que la abundancia también defiende.",
+      "ruleText": "Tyrell: Coloca 1 Fortificación en una región que controles (o +2 unidades si no usas especiales) y además coloca +1 unidad normal. Puedes hacer hasta 2 fortificaciones extra este turno."
     },
     {
       "id": "evt-046",
@@ -300,8 +301,8 @@
     {
       "id": "evt-047",
       "title": "Las Serpientes de Arena se infiltran",
-      "flavor": "Una carta sin firma, una puerta abierta y una guardia que no estaba donde debía. Dorne no golpea fuerte: golpea donde nadie mira.",
-      "ruleText": "Elige un jugador: toma 400 de oro de él. Además, obtienes +2 refuerzos este turno."
+      "flavor": "En Antigua y en Desembarco, una sombra basta: un veneno, una llave copiada, una guardia comprada. Dorne no asedia; corta la cuerda.",
+      "ruleText": "Elige un jugador: toma 400 de oro de él. Además, coloca 1 unidad de Asedio en una región que controles (o +2 unidades si no usas especiales)."
     },
     {
       "id": "evt-048",
