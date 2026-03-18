@@ -1,5 +1,8 @@
 const DEFAULT_DECK_PATH = "decks/events/valheim-got-risk/deck.json";
 
+// In-memory "already rolled" tracking (resets on refresh).
+const seenEventIds = new Set();
+
 function $(id) {
   return document.getElementById(id);
 }
@@ -20,8 +23,14 @@ async function loadDeck(deckPath) {
   return res.json();
 }
 
-function pickRandom(cards) {
-  return cards[Math.floor(Math.random() * cards.length)];
+function pickRandomUnseen(cards) {
+  const unseen = cards.filter((c) => c?.id && !seenEventIds.has(c.id));
+  if (unseen.length === 0) {
+    // Deck exhausted: start over.
+    seenEventIds.clear();
+    return cards[Math.floor(Math.random() * cards.length)];
+  }
+  return unseen[Math.floor(Math.random() * unseen.length)];
 }
 
 function renderCard(deck, card, deckPath) {
@@ -49,7 +58,8 @@ async function roll() {
       throw new Error("Deck has no cards");
     }
 
-    const card = pickRandom(cards);
+    const card = pickRandomUnseen(cards);
+    if (card?.id) seenEventIds.add(card.id);
     renderCard(deck, card, deckPath);
     status.textContent = "";
   } catch (err) {

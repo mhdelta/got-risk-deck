@@ -4,6 +4,10 @@
 const DEFAULT_DECK_URL =
   "https://raw.githubusercontent.com/mhdelta/got-risk-deck/main/decks/events/valheim-got-risk/deck.json";
 
+// In-memory "already rolled" tracking (resets on refresh).
+// Stored on `window` so it survives re-loading the function definition.
+window.__RISK_SEEN_EVENT_IDS = window.__RISK_SEEN_EVENT_IDS ?? new Set();
+
 async function printRandomEvent(url = DEFAULT_DECK_URL) {
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) {
@@ -16,7 +20,12 @@ async function printRandomEvent(url = DEFAULT_DECK_URL) {
     throw new Error("Deck has no cards");
   }
 
-  const card = cards[Math.floor(Math.random() * cards.length)];
+  const seen = window.__RISK_SEEN_EVENT_IDS;
+  const unseen = cards.filter((c) => c?.id && !seen.has(c.id));
+  const pool = unseen.length > 0 ? unseen : cards;
+  if (unseen.length === 0) seen.clear();
+  const card = pool[Math.floor(Math.random() * pool.length)];
+  if (card?.id) seen.add(card.id);
 
   const deckName = deck?.meta?.name ?? "(unknown deck)";
   console.log(`[${deckName}]`);
