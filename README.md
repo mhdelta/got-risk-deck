@@ -8,13 +8,17 @@ Contenido de datos para una futura web app.
 
 ## Script: evento aleatorio
 
+### Python (local)
+
 Imprime 1 evento aleatorio desde el mazo en JSON.
 
 - Mostrar carta completa:
-	- `powershell -ExecutionPolicy Bypass -File .\scripts\random-event.ps1`
+	- `python scripts/random_event.py`
 - Solo el texto de regla:
-	- `powershell -ExecutionPolicy Bypass -File .\scripts\random-event.ps1 -Raw`
+	- `python scripts/random_event.py --rule`
 - Salida en JSON:
-	- `powershell -ExecutionPolicy Bypass -File .\scripts\random-event.ps1 -AsJson`
-- Usar otro mazo:
-	- `powershell -ExecutionPolicy Bypass -File .\scripts\random-event.ps1 -DeckPath .\decks\events\valheim-got-risk\deck.json`
+	- `python scripts/random_event.py --json`
+
+### JavaScript (browser con internet)
+
+Abre DevTools → Console y pega el contenido de `scripts/random-event-browser.js`.
