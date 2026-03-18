@@ -320,6 +320,90 @@
       "title": "Rebelión abierta en Meereen",
       "flavor": "La multitud quema almacenes, corta rutas y golpea donde duele. El orden cuesta caro y, aun así, no siempre se recupera.",
       "ruleText": "Ghiscari: Elimina 6 unidades y pierde 600 de oro. En tu próximo turno, recibes 2 refuerzos menos (mínimo 0)."
+    },
+    {
+      "id": "evt-051",
+      "title": "La caída de Eddard Stark",
+      "flavor": "Una espada cae y con ella cae la fe en la justicia. El Norte no olvida… pero hoy sangra.",
+      "ruleText": "Stark: Stark pierde a Eddard Stark. Además, elimina 4 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-052",
+      "title": "La traición en la Guardia",
+      "flavor": "En el frío, la lealtad se vuelve un lujo. Un juramento roto suena más fuerte que cualquier cuerno.",
+      "ruleText": "Stark: Stark pierde a Jon Snow. Además, elimina 3 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-053",
+      "title": "El Juicio del León",
+      "flavor": "Un rugido se ahoga en su propia sala del trono. Las intrigas no respetan ni coronas ni minas.",
+      "ruleText": "Lannister: Lannister pierde a Tywin Lannister. Además, pierde 500 de oro y elimina 2 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-054",
+      "title": "El Matarreyes no regresa",
+      "flavor": "Una mano de oro no detiene una flecha real. Los cuentos cambian de final cuando el polvo se asienta.",
+      "ruleText": "Lannister: Lannister pierde a Jaime Lannister. Además, elimina 3 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-055",
+      "title": "La Reina Dragón cae",
+      "flavor": "El cielo se oscurece y el fuego no llega. A veces el destino muerde más fuerte que un dragón.",
+      "ruleText": "Targaryen: Targaryen pierde a Daenerys Targaryen, Jorah Mormont y Missandei. Además, elimina 4 unidades y pierde 400 de oro. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-056",
+      "title": "La araña es descubierta",
+      "flavor": "Cartas quemadas, secretos al aire y un silencio incómodo en la sala. Nadie confía, pero todos escuchan.",
+      "ruleText": "Targaryen: Targaryen pierde a Varys. Además, pierde 300 de oro. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-057",
+      "title": "El venado cae en su propio banquete",
+      "flavor": "La risa se corta de golpe. Una copa no siempre celebra: a veces sentencia.",
+      "ruleText": "Baratheon: Baratheon pierde a Robert Baratheon. Además, elimina 3 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-058",
+      "title": "Sombras en Rocadragón",
+      "flavor": "Velas rojas, rezos y una sombra que no debería existir. La fe promete victoria… y cobra en sangre.",
+      "ruleText": "Baratheon: Baratheon pierde a Stannis Baratheon y Melisandre. Además, elimina 4 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-059",
+      "title": "La Rosa se quema",
+      "flavor": "Un destello verde y la ciudad contiene el aliento. Donde había promesas, ahora solo hay ceniza.",
+      "ruleText": "Tyrell: Tyrell pierde a Margaery Tyrell, Loras Tyrell y Mace Tyrell. Además, elimina 4 unidades y pierde 400 de oro. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-060",
+      "title": "La Reina de Espinas da su último consejo",
+      "flavor": "Una última mirada, una última palabra y una sonrisa que no pide perdón. Algunas victorias duran más que una vida.",
+      "ruleText": "Tyrell: Tyrell pierde a Olenna Tyrell. Además, pierde 300 de oro. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-061",
+      "title": "Sangre en Lanza del Sol",
+      "flavor": "El calor de Dorne no perdona y el veneno no avisa. La casa se queda sin voz… por un tiempo.",
+      "ruleText": "Martell: Martell pierde a Doran Martell, Trystane Martell y Ellaria Sand. Además, elimina 4 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-062",
+      "title": "Las Serpientes de Arena pagan el precio",
+      "flavor": "Lo que se hace en la sombra vuelve con la misma rapidez. Un puñal, un grito y luego silencio.",
+      "ruleText": "Martell: Martell pierde a Obara Sand, Nymeria Sand y Tyene Sand. Además, pierde 200 de oro y elimina 3 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-063",
+      "title": "La Pirámide se tiñe de rojo",
+      "flavor": "En lo alto, los amos creen estar a salvo. Pero la ciudad guarda cuentas viejas y manos pacientes.",
+      "ruleText": "Ghiscari: Ghiscari pierde a Hizdahr zo Loraq, Kraznys mo Nakloz y Razdal mo Eraz. Además, elimina 4 unidades y pierde 300 de oro. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-064",
+      "title": "La Arpía corta las cuerdas",
+      "flavor": "Una reunión termina antes de empezar. El miedo se convierte en ley y la ley se compra con sangre.",
+      "ruleText": "Ghiscari: Ghiscari pierde a Skahaz mo Kandaq. Además, elimina 3 unidades. Retira esta carta de la partida."
     }
   ]
 }
