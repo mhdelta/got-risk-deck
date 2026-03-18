@@ -1,0 +1,325 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "id": "valheim-got-risk-v1",
+    "name": "Mazo de Eventos — Valheim x Risk (GoT)",
+    "language": "es",
+    "version": 1,
+    "createdAt": "2026-03-18",
+    "houses": [
+      "Stark",
+      "Lannister",
+      "Targaryen",
+      "Baratheon",
+      "Tyrell",
+      "Martell",
+      "Ghiscari"
+    ],
+    "notes": [
+      "Inspirado en Valheim y Game of Thrones; efectos pensados para una partida tipo Risk.",
+      "Los efectos son intencionalmente genéricos (unidades/oro/personajes/regiones) para que una web app o reglas caseras los interpreten."
+    ]
+  },
+  "cards": [
+    {
+      "id": "evt-001",
+      "title": "Todo en calma por ahora",
+      "flavor": "Los cuervos vuelan sin prisa y las antorchas arden sin sobresaltos. Por un instante, el reino parece sostener la respiración.",
+      "ruleText": "No ocurre nada. Descarta esta carta."
+    },
+    {
+      "id": "evt-002",
+      "title": "Los Caminantes Blancos toman el Norte",
+      "flavor": "El frío muerde más allá del Muro y el silencio pesa como una losa. Donde había nieve, ahora hay huellas que no dejan calor; donde había guardias, ahora hay sombras.",
+      "ruleText": "Cada jugador elimina hasta 10 unidades de sus regiones del Norte (repartidas como quiera)."
+    },
+    {
+      "id": "evt-003",
+      "title": "El Norte recuerda",
+      "flavor": "Se alzan viejos juramentos y los nombres antiguos vuelven a tener peso. Un aullido responde en la noche, y con él llegan manos dispuestas a empuñar acero.",
+      "ruleText": "Stark: En tu próximo turno, obtienes +5 unidades de refuerzo."
+    },
+    {
+      "id": "evt-004",
+      "title": "Manada de huargos",
+      "flavor": "Ojos brillando entre la nieve, pasos que no suenan y un hambre que no negocia. Los caminos se vuelven peligrosos y tus patrullas aprenden a moverse rápido.",
+      "ruleText": "Stark: Puedes hacer 1 movimiento extra de fortificación este turno (además del normal)."
+    },
+    {
+      "id": "evt-005",
+      "title": "Deshielo traicionero",
+      "flavor": "El hielo cede bajo las botas; un puente improvisado se parte y el convoy se dispersa. Nadie muere en gloria, pero sí se pierden hombres y suministros.",
+      "ruleText": "Stark: Elimina 3 unidades de tus regiones del Norte (repartidas como quieras)."
+    },
+    {
+      "id": "evt-006",
+      "title": "La Boda Roja",
+      "flavor": "La música cambia, las puertas se cierran y las sonrisas se vuelven cuchillos. La confianza se paga cara… y a veces se paga con sangre en el suelo del banquete.",
+      "ruleText": "Stark: Stark pierde a Robb Stark y Catelyn Stark. Además, elimina 4 unidades de su mapa. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-007",
+      "title": "Pagan sus deudas",
+      "flavor": "Una bolsa pesada cae sobre la mesa con un golpe seco. El silencio compra lealtades, y los rumores también se pueden sobornar.",
+      "ruleText": "Lannister: Toma 400 de oro del jugador con más oro (si hay empate, eliges a cuál)."
+    },
+    {
+      "id": "evt-008",
+      "title": "Oro de la Roca",
+      "flavor": "Las minas no descansan y los contadores no duermen. El metal manda y, en Poniente, el metal decide guerras.",
+      "ruleText": "Lannister: Ganas +600 de oro."
+    },
+    {
+      "id": "evt-009",
+      "title": "Intriga en la corte",
+      "flavor": "Una palabra fuera de lugar, un sello falsificado y el cuchillo ya está dentro. Pagas con oro… y con hombres que prefieren no estar en el bando equivocado.",
+      "ruleText": "Lannister: Pierdes 300 de oro y 2 unidades."
+    },
+    {
+      "id": "evt-010",
+      "title": "El Alto Gorrión confisca tesoros",
+      "flavor": "La fe reclama su parte y las puertas de los templos se cierran a tu favor. Los recaudadores no sonríen, y los guardias miran hacia otro lado.",
+      "ruleText": "Lannister: Pierdes 600 de oro. En tu próximo turno, recibes 3 refuerzos menos (mínimo 0)."
+    },
+    {
+      "id": "evt-011",
+      "title": "Nacidos del Fuego",
+      "flavor": "En la forja del destino, el miedo también es un arma. Un estandarte negro con rojo basta para que indecisos se vuelvan soldados.",
+      "ruleText": "Targaryen: Obtienes +6 unidades de refuerzo este turno."
+    },
+    {
+      "id": "evt-012",
+      "title": "Exiliados se unen a tu causa",
+      "flavor": "Un puñado de espadas jura lealtad por pan… o por miedo. Nadie canta tu nombre, pero nadie se niega a marchar.",
+      "ruleText": "Targaryen: Coloca +3 unidades en una región que controles."
+    },
+    {
+      "id": "evt-013",
+      "title": "Los dragones exigen tributo",
+      "flavor": "La bestia ruge y el aire se vuelve ceniza. El oro suena como un rezo desesperado… y alguien paga, porque el fuego siempre cobra.",
+      "ruleText": "Elige 1: (A) paga 400 de oro y gana +4 unidades; (B) si no pagas, elimina 2 unidades."
+    },
+    {
+      "id": "evt-014",
+      "title": "Dracarys mal calculado",
+      "flavor": "El fuego no distingue aliados de enemigos cuando la ira manda. Un rugido, un destello y tus propios hombres corren envueltos en humo.",
+      "ruleText": "Elige una región que controles: elimina 6 unidades de esa región."
+    },
+    {
+      "id": "evt-015",
+      "title": "Aliados de las Tierras de la Tormenta",
+      "flavor": "Cuando truena, más estandartes se acercan. Viejas casas menores llegan con escudos abollados y ganas de pelea.",
+      "ruleText": "Baratheon: Coloca +5 unidades en una región que controles."
+    },
+    {
+      "id": "evt-016",
+      "title": "Estandarte del Ciervo",
+      "flavor": "El rugido se escucha en los acantilados; la moral sube y los desertores lo piensan dos veces. Los oficiales empujan la línea hacia delante.",
+      "ruleText": "Baratheon: Obtienes +3 unidades de refuerzo este turno."
+    },
+    {
+      "id": "evt-017",
+      "title": "Tormenta en el Mar Angosto",
+      "flavor": "Velas rotas, mares negros y sal que corta la piel. Los capitanes se niegan a salir y tus rutas se vuelven un riesgo.",
+      "ruleText": "Baratheon: Este turno no puedes realizar ataques por mar (si tu variante no usa mar, entonces pierdes 2 unidades)."
+    },
+    {
+      "id": "evt-018",
+      "title": "Reclamo disputado",
+      "flavor": "Mensajeros llegan con sellos rotos y promesas contradictorias. Nadie sabe a quién obedecer y cada orden tarda el doble en cumplirse.",
+      "ruleText": "Baratheon: En tu próximo turno, solo recibes el refuerzo mínimo básico; ignora bonificaciones adicionales."
+    },
+    {
+      "id": "evt-019",
+      "title": "Caballería de las Rosas",
+      "flavor": "El campo florece… y también las lanzas. Los jinetes llegan con capas limpias y ojos fríos: vienen a ganar, no a morir.",
+      "ruleText": "Tyrell: Coloca +4 unidades en una región que controles."
+    },
+    {
+      "id": "evt-020",
+      "title": "Cosecha abundante",
+      "flavor": "Graneros llenos, rutas seguras y mercaderes felices. Los carros ruedan día y noche, y tu intendencia por fin respira.",
+      "ruleText": "Tyrell: Ganas +500 de oro."
+    },
+    {
+      "id": "evt-021",
+      "title": "Vino sospechoso",
+      "flavor": "Una copa derramada, un brindis interrumpido y las miradas se clavan como dagas. Nadie acusa en voz alta… pero todos ajustan cuentas.",
+      "ruleText": "Tyrell: Pierdes 300 de oro y 2 unidades."
+    },
+    {
+      "id": "evt-022",
+      "title": "Espinas entre las Rosas",
+      "flavor": "Una alianza se quiebra por dentro, y el jardín se vuelve contra sí mismo. Donde antes había banquetes, ahora hay listas de enemigos.",
+      "ruleText": "Tyrell: Elimina 5 unidades y pierde 300 de oro."
+    },
+    {
+      "id": "evt-023",
+      "title": "Venganza paciente",
+      "flavor": "En Dorne, el tiempo es un arma. El sol no olvida y la arena guarda secretos hasta que es el momento de cobrarlos.",
+      "ruleText": "Elige un jugador: toma 300 de oro de él."
+    },
+    {
+      "id": "evt-024",
+      "title": "El Sol y la Lanza",
+      "flavor": "El desierto enseña disciplina; cada paso cuenta y cada sombra vale una vida. Tus exploradores abren paso y tus filas se reordenan con precisión.",
+      "ruleText": "Martell: Este turno obtienes +2 refuerzos y puedes hacer 1 fortificación extra."
+    },
+    {
+      "id": "evt-025",
+      "title": "Arena ardiente",
+      "flavor": "El calor corta el aliento y el agua se vuelve un lujo. Las columnas se rompen y los rezagados quedan atrás.",
+      "ruleText": "Martell: Elimina 4 unidades de tus regiones del Sur (repartidas como quieras)."
+    },
+    {
+      "id": "evt-026",
+      "title": "Duelo fatal en la arena",
+      "flavor": "La multitud grita y la arena se tiñe de rojo. Un paso en falso y la historia cambia; el orgullo se convierte en tumba.",
+      "ruleText": "Martell: Martell pierde a Oberyn Martell y elimina 3 unidades. Retira esta carta de la partida."
+    },
+    {
+      "id": "evt-027",
+      "title": "Inmaculados contratados",
+      "flavor": "Pasos sincronizados, silencio absoluto y disciplina comprada con sangre y monedas. No preguntan por qué, solo a dónde.",
+      "ruleText": "Elige 1: (A) paga 400 de oro y coloca +6 unidades; (B) si no pagas, coloca +2 unidades."
+    },
+    {
+      "id": "evt-028",
+      "title": "Mercado de esclavos en auge",
+      "flavor": "Las cadenas suenan como monedas y el puerto se llena de compradores. La ciudad huele a especias… y a desesperación.",
+      "ruleText": "Ghiscari: Ganas +600 de oro (o +3 unidades si no usas oro)."
+    },
+    {
+      "id": "evt-029",
+      "title": "Hijos de la Arpía",
+      "flavor": "Sombras en callejones, cuchillos sin nombre y puertas que se cierran demasiado rápido. La ciudad muerde desde dentro y tus patrullas se encogen.",
+      "ruleText": "Ghiscari: Elimina 4 unidades."
+    },
+    {
+      "id": "evt-030",
+      "title": "Plaga en la Bahía",
+      "flavor": "Las aguas se vuelven grises y el aire huele a vinagre y humo. Los médicos cierran las puertas, los puertos se paran y el miedo hace el resto.",
+      "ruleText": "Ghiscari: Elimina 7 unidades y pierde 200 de oro."
+    },
+    {
+      "id": "evt-031",
+      "title": "El Banco de Hierro llama a tu puerta",
+      "flavor": "No gritan, no amenazan, no suplican. Simplemente recuerdan lo obvio: las deudas no se olvidan y las coronas se caen.",
+      "ruleText": "Elige 1: (A) paga 800 de oro; (B) si no pagas, elimina 4 unidades."
+    },
+    {
+      "id": "evt-032",
+      "title": "Ventisca de la Larga Noche",
+      "flavor": "El viento apaga hogueras, tapa huellas y rompe la moral. Las patrullas se pierden y los mensajeros regresan con dedos negros de frío.",
+      "ruleText": "Cada jugador que controle regiones del Norte elimina 3 unidades de esas regiones (repartidas como quiera)."
+    },
+    {
+      "id": "evt-033",
+      "title": "Cuervos con buenas noticias",
+      "flavor": "Un cuervo llega con un sello intacto: rutas despejadas, aliados menos nerviosos y una oportunidad que no se repite.",
+      "ruleText": "Jugador actual: Ganas 300 de oro y puedes hacer 1 fortificación extra este turno."
+    },
+    {
+      "id": "evt-034",
+      "title": "Llamada del Muro",
+      "flavor": "El cuerno suena una vez. Dos veces. Tres veces. Quienes miran al Norte entienden el mensaje: o envías hombres, o el frío los enviará por ti.",
+      "ruleText": "Cada jugador elige 1: (A) coloca +2 unidades en el Norte (si controla Norte); (B) elimina 2 unidades."
+    },
+    {
+      "id": "evt-035",
+      "title": "El Kraken acecha (Incursión de hierro)",
+      "flavor": "Barcos sin luces, remos silenciosos y un golpe rápido en la costa. No importa quién seas: alguien pierde algo esta noche.",
+      "ruleText": "Jugador actual: Pierdes 400 de oro (o 2 unidades si no usas oro) y además eliminas 1 unidad."
+    },
+    {
+      "id": "evt-036",
+      "title": "Los caballeros del Valle responden",
+      "flavor": "Desde las montañas llega un rumor que se vuelve galope. Acero limpio, disciplina y una promesa: esta vez sí llegan a tiempo.",
+      "ruleText": "Stark: Coloca +5 unidades en una región que controles y gana 200 de oro."
+    },
+    {
+      "id": "evt-037",
+      "title": "El Bastardo de Bolton siembra terror",
+      "flavor": "Un estandarte desollado cuelga en un cruce de caminos. Los aldeanos huyen, los mensajeros callan y tus reclutas se evaporan.",
+      "ruleText": "Stark: Elimina 5 unidades y pierde 200 de oro."
+    },
+    {
+      "id": "evt-038",
+      "title": "La Montaña hace una demostración",
+      "flavor": "Un solo acto de brutalidad y las puertas se abren. Los enemigos dudan, pero también te cuesta mantener a tus propios hombres alineados.",
+      "ruleText": "Lannister: Obtienes +3 refuerzos este turno, pero pierdes 100 de oro."
+    },
+    {
+      "id": "evt-039",
+      "title": "El Fuego Valyrio aparece en los sótanos",
+      "flavor": "Un alquimista sonríe demasiado. El frasco brilla verde incluso en la oscuridad, y de pronto todos negocian con más respeto.",
+      "ruleText": "Lannister: En tu próximo turno obtienes +4 refuerzos, pero pagas 300 de oro ahora."
+    },
+    {
+      "id": "evt-040",
+      "title": "Los Dothraki cruzan como tormenta",
+      "flavor": "Se escucha el galope antes de ver el polvo. No asedian: atraviesan, rodean y caen donde duele.",
+      "ruleText": "Targaryen: Obtienes +5 refuerzos este turno y 1 fortificación extra."
+    },
+    {
+      "id": "evt-041",
+      "title": "El dragón muda de piel",
+      "flavor": "Una bestia crece y con ella crece el miedo. Los mercaderes pagan para no arder y los soldados se enderezan al escuchar el rugido.",
+      "ruleText": "Targaryen: Ganas 400 de oro y colocas +2 unidades en una región que controles."
+    },
+    {
+      "id": "evt-042",
+      "title": "Sombras y susurros de Asshai",
+      "flavor": "Un consejero habla de profecías y cuchillos. La magia cobra su precio, pero el resultado es… efectivo.",
+      "ruleText": "Targaryen: Pierdes 500 de oro y aun así obtienes +3 refuerzos este turno."
+    },
+    {
+      "id": "evt-043",
+      "title": "Sacerdotes rojos avivan la llama",
+      "flavor": "La fe se vuelve fogata: ilumina, calienta… y quema. Tus hombres creen que el destino está de su lado, pero el fanatismo también rompe filas.",
+      "ruleText": "Elige 1: (A) +6 refuerzos este turno; (B) elimina 2 unidades. En cualquier caso, gana 400 de oro."
+    },
+    {
+      "id": "evt-044",
+      "title": "La corona se endeuda",
+      "flavor": "Los recaudadores estiran la mano, los comerciantes suben precios y los soldados exigen paga. Nadie se queda gratis en tu guerra.",
+      "ruleText": "Baratheon: Pierdes 700 de oro y eliminas 3 unidades."
+    },
+    {
+      "id": "evt-045",
+      "title": "Jardines fortificados",
+      "flavor": "El Dominio no solo da comida: también da muros, herramientas y manos. Levantas defensas rápidas como si la tierra misma ayudara.",
+      "ruleText": "Tyrell: Coloca +3 unidades en una región que controles y puedes hacer hasta 2 fortificaciones extra este turno."
+    },
+    {
+      "id": "evt-046",
+      "title": "Rivalidad entre vasallos",
+      "flavor": "Dos casas menores discuten por un camino y tu intendencia se atasca entre sellos, quejas y amenazas veladas.",
+      "ruleText": "Tyrell: Pierdes 400 de oro. En tu próximo turno recibes 2 refuerzos menos (mínimo 0)."
+    },
+    {
+      "id": "evt-047",
+      "title": "Las Serpientes de Arena se infiltran",
+      "flavor": "Una carta sin firma, una puerta abierta y una guardia que no estaba donde debía. Dorne no golpea fuerte: golpea donde nadie mira.",
+      "ruleText": "Elige un jugador: toma 400 de oro de él. Además, obtienes +2 refuerzos este turno."
+    },
+    {
+      "id": "evt-048",
+      "title": "La tormenta de arena borra las huellas",
+      "flavor": "El viento levanta una pared de arena que se traga caminos y señales. Tus columnas se separan y la sed manda.",
+      "ruleText": "Martell: Elimina 6 unidades de tus regiones del Sur (repartidas como quieras) y pierde 200 de oro."
+    },
+    {
+      "id": "evt-049",
+      "title": "Caravana de esclavos capturada",
+      "flavor": "Una emboscada en el camino correcto cambia el balance del día. Lo que era mercancía ahora es ventaja… por un rato.",
+      "ruleText": "Ghiscari: Ganas 500 de oro, pero eliminas 1 unidad."
+    },
+    {
+      "id": "evt-050",
+      "title": "Rebelión abierta en Meereen",
+      "flavor": "La multitud quema almacenes, corta rutas y golpea donde duele. El orden cuesta caro y, aun así, no siempre se recupera.",
+      "ruleText": "Ghiscari: Elimina 6 unidades y pierde 600 de oro. En tu próximo turno, recibes 2 refuerzos menos (mínimo 0)."
+    }
+  ]
+}
